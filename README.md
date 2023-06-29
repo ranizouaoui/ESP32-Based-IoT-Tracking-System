@@ -8,13 +8,14 @@ Our project aims to develop a <a href="https://github.com/ranizouaoui/ESP32-Base
  </div>
  
 ## Project Map
-Our <a href="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/" >Tracking system </a> uses the <a href="https://www.u-blox.com/en/product/neo-7-series">NEO-7M GPS module</a>  to retrieve real-time GPS data, which is then transmitted to an MQTT (HiveMQ) server. The web application retrieves data from the server and visualizes it on a geographical map. Simultaneously, the data stream is kept in a <a href="https://www .mongodb.com/">MongoDB</a> database for future use. This project provides a comprehensive and efficient solution for real-time tracking and management of location data.
+Our <a href="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/" >Tracking system </a> uses the <a href="https://www.u-blox.com/en/product/neo-7-series">NEO-7M GPS module</a>  to retrieve real-time GPS data, which is then transmitted to an MQTT (<a href="https://www.hivemq.com/">HiveMQ </a>) server. The web application retrieves data from the server and visualizes it on a geographical map. Simultaneously, the data stream is kept in a <a href="https://www .mongodb.com/">MongoDB</a> database for future use. This project provides a comprehensive and efficient solution for real-time tracking and management of location data.
 
 <strong> Note:</strong> The <a href="https://www.espressif.com/en/products/socs/esp32" >ESP32 </a>board starts sending data if it is well configured (from the configuration interface)
 <div align="center"> 
 <img src="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/blob/main/pictures/synoptique.png" alt="" />
  </div>
- 
+  <blockquote> <p dir="auto">Practically, we didn't work with the gprs module (just Wi-Fi). So, you can implement the code on TTGO or ESP32 board. It is the same</p></blockquote>
+  
  ## Manual Setup
  ### ESP32 board setup
  Perform the following steps:
@@ -35,7 +36,7 @@ Our <a href="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/" >T
  </div>
   <blockquote> <p dir="auto">If the tracker is well configured you will be redirected to this interface</p></blockquote>
    <div align="center"> 
- <img src="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/blob/main/pictures/configuration1.png" alt="" />
+ <img src="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/blob/main/pictures/configuration1.png" style="height: 400px;" alt="" />
  </div>
 
 ## Web application setup
