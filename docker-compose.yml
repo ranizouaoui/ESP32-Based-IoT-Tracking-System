@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - backend
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+    environment:
+      - MONGO_URI=mongodb://root:example@mongodb:27017/mydatabase?authSource=admin
+  mongodb:
+    image: mongo:latest
+    command: mongod --bind_ip_all
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
