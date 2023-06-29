@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ESP WEB SERVER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="src/jquery-3.6.4.min.js"></script>
+  <script src="src/bootstrap.bundle.min.js"></script>
+  <script>
+    function showElement() {
+      var element = document.getElementById("my_element");
+      var element1 = document.getElementById("my_element1");
+      if (document.querySelector('input[name="inlineRadioOptions"]:checked').value === "option1") {
+        element1.style.display = "none";
+        element.style.display = "flex";
+
+      }
+    }
+    function showElement1() {
+      var element = document.getElementById("my_element");
+      var element1 = document.getElementById("my_element1");
+      if (document.querySelector('input[name="inlineRadioOptions"]:checked').value === "option2") {
+        element.style.display = "none";
+        element1.style.display = "flex";
+      }
+    }
+
+  </script>
+  <link rel="stylesheet" type="text/css" href="src/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="topnav">
+    <div class="wrapper d-flex align-items-stretch">
+      <div>
+        <img src="icons8_GPS_Signal_128px.png" class="img-fluid rounded-start" height="60" width="60"
+          style="padding: 3px;" />
+
+      </div>
+      <div>
+        <h3 style="color: white;     padding-top: 12px;">Car tracker</h3>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="card-grid">
+      <div>
+        <h2>Update your informations :</h2>
+        <br>
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="name@example.com">
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">Password</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="New password">
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefaultUsername" class="form-label">Username</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              <input type="text" class="form-control" id="validationDefaultUsername"
+                aria-describedby="inputGroupPrepend2" placeholder="New username">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">Car number</label>
+            <input type="text" class="form-control" id="validationDefault03" placeholder="215 TUN 5620">
+          </div>
+          <div class="col-md-3">
+            <label for="validationDefault05" class="form-label">Address</label>
+            <input type="text" class="form-control" id="validationDefault05" placeholder="Set your address">
+          </div>
+          <div class="col-md-3">
+            <label for="validationDefault05" class="form-label">Phone number</label>
+            <input type="text" class="form-control" id="validationDefault05" placeholder="Set your Phone number">
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="content" style="margin-top: -2%;">
+    <div class="card-grid">
+      <div>
+        <h2 style="padding-bottom: 10px;">Update your connectivity information :</h2>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
+            onclick="showElement()" checked />
+          <label class="form-check-label" for="inlineRadio1">Use Wi-Fi connection</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
+            onclick="showElement1()" />
+          <label class="form-check-label" for="inlineRadio2">Use GPRS connection</label>
+        </div>
+        <br>
+
+        <form class="row g-3" style="padding-top: 15px;">
+          <div class="row" id="my_element" style="padding-top: 14px;display:flex ">
+            <div class="col-md-5 mb-3">
+              <input type="text" class="form-control" id="validationDefault01" placeholder="Wi-Fi SSID"
+                name="wifi-ssid">
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control" id="validationDefault02" placeholder="Wi-Fi Password"
+                name="wifi-password">
+            </div>
+          </div>
+          <div class="row" id="my_element1" style="padding-top: 14px;display:none ">
+            <div class="col-md-5 mb-3">
+              <input type="text" class="form-control" id="validationDefault01" placeholder="SimPin(If applicable)">
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control" id="validationDefault02" placeholder="APN (example: internet.tn)">
+            </div>
+            <div class="col-md-5 mb-3">
+              <input type="text" class="form-control" id="validationDefault01" placeholder="GPRS User">
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control" id="validationDefault02" placeholder="GPRS Password">
+            </div>
+          </div>
+          <div class="alert alert-danger" role="alert">
+            The access code to the control platform is generated only once. You cannot change it from this page.To
+            change it. you have to click on 'RESET' Button
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
