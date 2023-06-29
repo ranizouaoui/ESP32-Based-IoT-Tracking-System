@@ -38,4 +38,38 @@ Our <a href="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/" >T
  <img src="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/blob/main/pictures/configuration1.png" alt="" />
  </div>
 
-  ## Web application setup
+## Web application setup
+
+<blockquote>
+<p dir="auto">Make sure Docker is installed.</p>
+</blockquote>
+<p dir="auto">Spin up the containers</p>
+
+```
+docker-compose up -d --build
+```
+Running the command will expose 3 services with the following ports:
+<ul dir="auto">
+
+<li><strong>Backend</strong> - <code>:3000</code></li>
+<li><strong>Frontend</strong> - <code>:8080</code></li>
+<li><strong>Mongodb</strong> - <code>:27017</code></li>
+</ul>
+
+You can now access the server at http://localhost:8080/.
+
+## App preview
+ 
+ <div align="center"> 
+<img src="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/blob/main/pictures/login-interface.png" alt="" />
+ </div>
+  <div align="center"> 
+<img src="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/blob/main/pictures/user-interface.png" alt="" />
+ </div>
+   <div align="center"> 
+<img src="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/blob/main/pictures/user-history.png" alt="" />
+ </div>
+ 
+ ## Want more details?
+ 
+ For more details or if you want to recommend me for other projects. Just contact me on my email: <strong> ranizouaouicontact@gmail.com </strong>
