@@ -1,3 +1,4 @@
+//TODO: CHANGE THE HIVREMQ SETTINGS
 const express = require('express')
 const { MongoClient } = require('mongodb')
 const bodyParser = require('body-parser');
@@ -40,11 +41,11 @@ client.connect().then(() => {
     console.error(error)
 })
 var options = {
-    host: '1d7efb6a667a495984a61332abf1528a.s2.eu.hivemq.cloud',
+    host: 'xxxxxxxx',
     port: 8883,
     protocol: 'mqtts',
-    username: 'oumaima_slema',
-    password: 'Oumaima_slema123'
+    username: 'xxxxxxxx',
+    password: 'xxxxxxxx'
 }
 
 var data = {
