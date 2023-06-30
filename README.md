@@ -38,6 +38,7 @@ Our <a href="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/" >T
    <div align="center"> 
  <img src="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/blob/main/pictures/configuration1.png" style="height: 400px;" alt="" />
  </div>
+9- Make the wiring between the board and the gprs module as shown <a href="https://circuitdigest.com/microcontroller-projects/interfacing-neo6m-gps-module-with-esp32">here</a>
 
 ## Web application setup
 
