@@ -45,6 +45,8 @@ Our <a href="https://github.com/ranizouaoui/ESP32-Based-IoT-Tracking-System/" >T
 <blockquote>
 <p dir="auto">Make sure Docker is installed.</p>
 </blockquote>
+
+<blockquote> <p dir="auto">You need to update the broker and the firebase settings in <strong>backend >server.js </strong> and <strong>frontend>src>firebase.js</strong> </p></blockquote>
 <p dir="auto">Spin up the containers</p>
 
 ```
